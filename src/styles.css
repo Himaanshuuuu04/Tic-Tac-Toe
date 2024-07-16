@@ -1,0 +1,265 @@
+body {
+  background-color: #fff7ea;
+  opacity: 1;
+  background-image: linear-gradient(#d3cfc8 2.2px, transparent 2.2px),
+    linear-gradient(90deg, #d3cfc8 2.2px, transparent 2.2px),
+    linear-gradient(#d3cfc8 1.1px, transparent 1.1px),
+    linear-gradient(90deg, #d3cfc8 1.1px, #fff7ea 1.1px);
+  background-size: 55px 55px, 55px 55px, 11px 11px, 11px 11px;
+  background-position: -2.2px -2.2px, -2.2px -2.2px, -1.1px -1.1px,
+    -1.1px -1.1px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #5e655b;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Heading {
+  font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10rem;
+  margin: 0rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.sub-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+.btn {
+  appearance: none;
+  border: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  height: 9rem;
+  width: 9rem;
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.normal:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+.ai:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #ff3030 0 -3px 0 inset;
+}
+
+.normal:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.ai:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #ff3030 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.normal:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.ai:active {
+  box-shadow: #ff3030 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.normal {
+  background-color: #91deff;
+  color: #005eb5;
+}
+.ai {
+  color: #ff3030;
+  background-color: #ff9d9d;
+}
+.Footer {
+  position: absolute;
+  bottom: 10px;
+  line-height: 0%;
+}
+p {
+  margin: 6px;
+}
+a {
+  text-decoration: none;
+  color: #5e655b;
+}
+.GitHubIcon {
+  position: relative;
+  right: 2px;
+  bottom: -4px;
+  display: inline-block;
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  height: 25rem;
+  width: 25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  margin: 2rem;
+  cursor: none;
+}
+
+.reset-button {
+  align-items: center;
+  appearance: none;
+  border-radius: 1rem;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Fredoka", sans-serif;
+  height: 3rem;
+  width: 9rem;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #91deff;
+  color: #005eb5;
+  margin: 1rem;
+}
+
+.reset-button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.reset-button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.reset-button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.Timer {
+  height: 3rem;
+  width: 8rem;
+  background-color: #ff9d9d;
+  color: #ff3030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: no-drop;
+  margin: 2rem;
+  margin-bottom: 0rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.tile {
+  align-items: center;
+  appearance: none;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #a5dfb0 0 -3px 0 inset;
+  box-sizing: border-box;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  border-radius: 1rem;
+  width: 8rem;
+  height: 8rem;
+  background-color: #acef8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #519d57;
+  font-size: 5rem;
+}
+
+.tile:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #519d57 0 -3px 0 inset;
+}
+
+.tile:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #519d57 0 -5px 0 inset;
+  transform: translateY(-2px);
+}
+
+.tile:active {
+  box-shadow: #519d57 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.game-over {
+  font-size: 3rem;
+  background-color: #acef8d;
+  color: #519d57;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  text-align: center;
+  cursor: no-drop;
+}
+.flex {
+  display: flex;
+}
